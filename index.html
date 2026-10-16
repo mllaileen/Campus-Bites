@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusBites | Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        🍴 Campus<span>Bites</span>
+    </a>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="orders.html">Orders</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+    <a href="cart.html" class="cart-button">
+        🛒 Cart
+        <span id="cart-count">0</span>
+    </a>
+
+    <div class="auth-menu"></div>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">CAMPUS FOOD, MADE EASY</p>
+
+            <h1>
+                Your favorite food,
+                <span>one click away.</span>
+            </h1>
+
+            <p>
+                Order delicious meals from your campus cafeteria
+                without waiting in long lines.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="menu.html" class="btn btn-primary">
+                    Order Now →
+                </a>
+
+                <a href="#popular" class="btn btn-light">
+                    Explore Food
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-food">
+            <img
+                src="assets/burger.svg"
+                alt="Delicious Burger"
+                class="hero-burger"
+            >
+        </div>
+
+    </section>
+
+
+    <!-- SEARCH -->
+
+    <section class="home-search">
+
+        <div>
+            <h2>What are you craving?</h2>
+            <p>Find your favorite campus meals.</p>
+        </div>
+
+        <div class="search-box">
+
+            <span>🔎</span>
+
+            <input
+                type="text"
+                id="home-search"
+                placeholder="Search for snacks, meals, drinks..."
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">BROWSE</p>
+                <h2>Food Categories</h2>
+            </div>
+
+        </div>
+
+        <div class="category-grid">
+
+            <a href="menu.html?category=Burgers" class="category-card">
+                <div class="category-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&h=200&fit=crop"
+                        alt="Burgers"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="category-info">
+                    <h3>🍔 Burgers</h3>
+                    <p>Juicy burgers made fresh to order</p>
+                </div>
+            </a>
+
+            <a href="menu.html?category=Rice Meals" class="category-card">
+                <div class="category-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=300&h=200&fit=crop"
+                        alt="Rice Meals"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="category-info">
+                    <h3>🍱 Rice Meals</h3>
+                    <p>Hearty rice and viand combos</p>
+                </div>
+            </a>
+
+            <a href="menu.html?category=Pasta" class="category-card">
+                <div class="category-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=300&h=200&fit=crop"
+                        alt="Pasta"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="category-info">
+                    <h3>🍝 Pasta</h3>
+                    <p>Comfort pasta dishes</p>
+                </div>
+            </a>
+
+            <a href="menu.html?category=Sandwiches" class="category-card">
+                <div class="category-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=300&h=200&fit=crop"
+                        alt="Sandwiches"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="category-info">
+                    <h3>🥪 Sandwiches</h3>
+                    <p>Fresh and filling sandwiches</p>
+                </div>
+            </a>
+
+            <a href="menu.html?category=Sides" class="category-card">
+                <div class="category-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=300&h=200&fit=crop"
+                        alt="Sides"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="category-info">
+                    <h3>🍟 Sides</h3>
+                    <p>Crispy sides and fries</p>
+                </div>
+            </a>
+
+            <a href="menu.html?category=Drinks" class="category-card">
+                <div class="category-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=300&h=200&fit=crop"
+                        alt="Drinks"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="category-info">
+                    <h3>🥤 Drinks</h3>
+                    <p>Cold drinks and coffee</p>
+                </div>
+            </a>
+
+            <a href="menu.html?category=Desserts" class="category-card">
+                <div class="category-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=200&fit=crop"
+                        alt="Desserts"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="category-info">
+                    <h3>🍰 Desserts</h3>
+                    <p>Sweet treats to end your day</p>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- POPULAR -->
+
+    <section class="section" id="popular">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">STUDENT FAVORITES</p>
+                <h2>Popular Today</h2>
+            </div>
+
+            <a href="menu.html" class="see-all">
+                See all →
+            </a>
+
+        </div>
+
+        <div id="popular-foods" class="food-grid"></div>
+
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+
+    <section class="how-section">
+
+        <div class="section-heading center">
+
+            <p class="eyebrow">SIMPLE & FAST</p>
+
+            <h2>How CampusBites Works</h2>
+
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">1</div>
+
+                <h3>Choose Your Food</h3>
+
+                <p>
+                    Browse our campus menu and choose
+                    your favorite meals.
+                </p>
+
+            </div>
+
+            <div class="step">
+
+                <div class="step-number">2</div>
+
+                <h3>Add to Cart</h3>
+
+                <p>
+                    Select the quantity and add your
+                    food to your cart.
+                </p>
+
+            </div>
+
+            <div class="step">
+
+                <div class="step-number">3</div>
+
+                <h3>Place Your Order</h3>
+
+                <p>
+                    Choose your pickup location and
+                    confirm your order.
+                </p>
+
+            </div>
+
+            <div class="step">
+
+                <div class="step-number">4</div>
+
+                <h3>Pick It Up</h3>
+
+                <p>
+                    Track your order and pick it up
+                    when it is ready.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div>
+        <a href="index.html" class="logo">
+            🍴 Campus<span>Bites</span>
+        </a>
+
+        <p>
+            Campus food ordering made simple.
+        </p>
+    </div>
+
+    <div class="footer-links">
+
+        <a href="menu.html">Menu</a>
+        <a href="orders.html">Orders</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="profile.html">Profile</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 CampusBites
+    </p>
+
+</footer>
+
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/auth.js"></script>
+
+<script>
+
+    renderPopularFoods();
+
+    const searchInput = document.getElementById("home-search");
+
+    searchInput.addEventListener("keydown", function(event) {
+
+        if (event.key === "Enter") {
+
+            const search = searchInput.value.trim();
+
+            window.location.href =
+                "menu.html?search=" +
+                encodeURIComponent(search);
+
+        }
+
+    });
+
+</script>
+
+</body>
+</html>
