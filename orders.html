@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusBites | Orders</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        🍴 Campus<span>Bites</span>
+    </a>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="orders.html" class="active">Orders</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="profile.html">Profile</a>
+
+    </nav>
+
+    <a href="cart.html" class="cart-button">
+        🛒 Cart
+        <span id="cart-count">0</span>
+    </a>
+
+    <div class="auth-menu"></div>
+
+</header>
+
+
+<main class="page">
+
+    <section class="page-header">
+
+        <p class="eyebrow">YOUR ACTIVITY</p>
+
+        <h1>My Orders 📦</h1>
+
+        <p>
+            Track your current and previous orders.
+        </p>
+
+    </section>
+
+
+    <div id="signin-prompt" class="empty-state hidden">
+        <div class="empty-icon">🔐</div>
+        <h2>Sign in to view orders</h2>
+        <p>You need an account to track your orders.</p>
+        <a href="auth.html" class="btn btn-primary">Sign In / Sign Up</a>
+    </div>
+
+    <div id="orders-list"></div>
+
+
+    <div id="empty-orders" class="empty-state hidden">
+
+        <div class="empty-icon">📦</div>
+
+        <h2>No orders yet</h2>
+
+        <p>
+            Your orders will appear here after checkout.
+        </p>
+
+        <a href="menu.html" class="btn btn-primary">
+            Start Ordering
+        </a>
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+
+    <div>
+        <a href="index.html" class="logo">
+            🍴 Campus<span>Bites</span>
+        </a>
+
+        <p>
+            Campus food ordering made simple.
+        </p>
+    </div>
+
+    <p class="copyright">
+        © 2026 CampusBites
+    </p>
+
+</footer>
+
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/orders.js"></script>
+
+</body>
+</html>
