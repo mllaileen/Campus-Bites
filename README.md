@@ -6,3 +6,4 @@
 - John Rian M. Cabase
 - Rhea Liera B. Ebarsabal
 - Mathew T. Beltran
+- Ana Lea T. Escorial
