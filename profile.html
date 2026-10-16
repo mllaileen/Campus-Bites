@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusBites | Profile</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        🍴 Campus<span>Bites</span>
+    </a>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="orders.html">Orders</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="profile.html" class="active">
+            Profile
+        </a>
+
+    </nav>
+
+    <a href="cart.html" class="cart-button">
+        🛒 Cart
+        <span id="cart-count">0</span>
+    </a>
+
+    <div class="auth-menu"></div>
+
+</header>
+
+
+<main class="page">
+
+    <section class="profile-header">
+
+        <div class="profile-avatar">
+            👤
+        </div>
+
+        <h1 id="profile-name">Guest</h1>
+
+        <p id="profile-email">Not signed in</p>
+
+    </section>
+
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+
+            <span>📦</span>
+
+            <strong id="profile-orders">
+                0
+            </strong>
+
+            <p>Orders</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>❤️</span>
+
+            <strong id="profile-favorites">
+                0
+            </strong>
+
+            <p>Favorites</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>💰</span>
+
+            <strong id="profile-spent">
+                ₱0
+            </strong>
+
+            <p>Total Spent</p>
+
+        </div>
+
+    </section>
+
+
+    <section class="profile-section">
+
+        <h2>Account</h2>
+
+        <div class="profile-menu">
+
+            <div class="profile-menu-item">
+
+                <span>👤</span>
+
+                <div>
+                    <strong>Personal Information</strong>
+                    <small>Student details</small>
+                </div>
+
+                <span>›</span>
+
+            </div>
+
+
+            <div class="profile-menu-item">
+
+                <span>🔔</span>
+
+                <div>
+                    <strong>Notifications</strong>
+                    <small>Order notifications</small>
+                </div>
+
+                <span>›</span>
+
+            </div>
+
+
+            <div class="profile-menu-item">
+
+                <span>⚙️</span>
+
+                <div>
+                    <strong>Settings</strong>
+                    <small>Application settings</small>
+                </div>
+
+                <span>›</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="profile-section">
+
+        <h2>About CampusBites</h2>
+
+        <div class="about-card">
+
+            <div class="about-logo">
+                🍴
+            </div>
+
+            <div>
+
+                <h3>CampusBites</h3>
+
+                <p>
+                    A frontend-only campus food ordering
+                    system designed to make ordering
+                    cafeteria meals faster and easier.
+                </p>
+
+                <small>
+                    Version 1.0.0
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div>
+        <a href="index.html" class="logo">
+            🍴 Campus<span>Bites</span>
+        </a>
+
+        <p>
+            Campus food ordering made simple.
+        </p>
+    </div>
+
+    <p class="copyright">
+        © 2026 CampusBites
+    </p>
+
+</footer>
+
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/profile.js"></script>
+
+</body>
+</html>
