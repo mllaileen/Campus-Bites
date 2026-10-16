@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 210" role="img" aria-label="Burger">
+  <defs>
+    <linearGradient id="bunTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd479"/>
+      <stop offset="0.55" stop-color="#f5a623"/>
+      <stop offset="1" stop-color="#e07b1f"/>
+    </linearGradient>
+    <linearGradient id="bunBottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7b84d"/>
+      <stop offset="1" stop-color="#e8912a"/>
+    </linearGradient>
+    <linearGradient id="patty" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a5227"/>
+      <stop offset="1" stop-color="#5f3418"/>
+    </linearGradient>
+    <linearGradient id="cheese" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd23f"/>
+      <stop offset="1" stop-color="#f0a500"/>
+    </linearGradient>
+    <linearGradient id="tomato" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff7a6b"/>
+      <stop offset="1" stop-color="#e74c3c"/>
+    </linearGradient>
+    <linearGradient id="lettuce" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd14f"/>
+      <stop offset="1" stop-color="#6db33f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- top bun -->
+  <path d="M32 104 C32 50 72 14 120 14 C168 14 208 50 208 104 C208 110 204 112 198 112 L42 112 C36 112 32 110 32 104 Z" fill="url(#bunTop)"/>
+  <ellipse cx="90" cy="42" rx="42" ry="17" fill="#ffffff" opacity="0.20"/>
+
+  <!-- sesame seeds -->
+  <ellipse cx="82" cy="46" rx="6" ry="3.5" fill="#ffe9c4" transform="rotate(-25 82 46)"/>
+  <ellipse cx="118" cy="34" rx="6" ry="3.5" fill="#ffe9c4" transform="rotate(8 118 34)"/>
+  <ellipse cx="152" cy="44" rx="6" ry="3.5" fill="#ffe9c4" transform="rotate(22 152 44)"/>
+  <ellipse cx="98" cy="62" rx="6" ry="3.5" fill="#ffe9c4" transform="rotate(-12 98 62)"/>
+  <ellipse cx="138" cy="64" rx="6" ry="3.5" fill="#ffe9c4" transform="rotate(14 138 64)"/>
+  <ellipse cx="68" cy="66" rx="6" ry="3.5" fill="#ffe9c4" transform="rotate(28 68 66)"/>
+  <ellipse cx="172" cy="68" rx="6" ry="3.5" fill="#ffe9c4" transform="rotate(-18 172 68)"/>
+
+  <!-- lettuce -->
+  <path d="M26 100 L214 100 L214 106 Q206 120 197 107 Q188 120 179 107 Q170 120 161 107 Q152 120 143 107 Q134 120 125 107 Q116 120 107 107 Q98 120 89 107 Q80 120 71 107 Q62 120 53 107 Q44 120 35 107 Q28 118 26 108 Z" fill="url(#lettuce)"/>
+
+  <!-- cheese with drips -->
+  <rect x="36" y="110" width="168" height="12" rx="5" fill="url(#cheese)"/>
+  <rect x="164" y="118" width="15" height="24" rx="7" fill="url(#cheese)"/>
+  <rect x="62" y="118" width="15" height="28" rx="7" fill="url(#cheese)"/>
+
+  <!-- tomato -->
+  <rect x="42" y="130" width="156" height="18" rx="9" fill="url(#tomato)"/>
+  <rect x="54" y="133" width="58" height="4" rx="2" fill="#ffffff" opacity="0.25"/>
+
+  <!-- patty -->
+  <path d="M36 150 L204 150 C213 150 217 156 215 164 C212 176 199 182 183 182 L57 182 C41 182 28 176 25 164 C23 156 27 150 36 150 Z" fill="url(#patty)"/>
+  <path d="M70 162 q12 -5 24 0" stroke="#4a2a12" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M120 166 q12 -5 24 0" stroke="#4a2a12" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M150 160 q12 -5 24 0" stroke="#4a2a12" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- bottom bun -->
+  <path d="M44 182 L196 182 C207 182 211 188 209 195 C205 203 193 206 181 206 L59 206 C47 206 35 203 31 195 C29 188 33 182 44 182 Z" fill="url(#bunBottom)"/>
+  <ellipse cx="96" cy="192" rx="46" ry="7" fill="#ffffff" opacity="0.12"/>
+</svg>
