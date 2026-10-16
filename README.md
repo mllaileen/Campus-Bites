@@ -2,5 +2,7 @@
 
 ## Group Members
 
-Melli Aileen D. Heraldez
-Rhea Liera B. Ebarsabal
+- Melli Aileen D. Heraldez
+- John Rian M. Cabase
+- Rhea Liera B. Ebarsabal
+- Mathew T. Beltran
