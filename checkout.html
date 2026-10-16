@@ -1,0 +1,301 @@
+  <a href="cart.html" class="cart-button">
+        🛒 Cart
+        <span id="cart-count">0</span>
+    </a>
+
+    <div class="auth-menu"></div>
+
+</header>
+
+
+<main class="page">
+
+    <section class="page-header">
+
+        <p class="eyebrow">ALMOST THERE</p>
+
+        <h1>Checkout 💳</h1>
+
+        <p>
+            Confirm your order details.
+        </p>
+
+    </section>
+
+
+    <div id="signin-prompt" class="empty-state hidden">
+        <div class="empty-icon">🔐</div>
+        <h2>Sign in to checkout</h2>
+        <p>You need an account to place an order.</p>
+        <a href="auth.html" class="btn btn-primary">Sign In / Sign Up</a>
+    </div>
+
+    <div class="checkout-layout">
+
+        <section class="form-card">
+
+            <h2>Pickup Location</h2>
+
+            <label class="radio-card">
+
+                <input
+                    type="radio"
+                    name="pickup"
+                    value="Main Campus Cafeteria"
+                    checked
+                >
+
+                <div>
+
+                    <strong>
+                        🍴 Main Campus Cafeteria
+                    </strong>
+
+                    <span>
+                        Building A • 2nd Floor
+                    </span>
+
+                </div>
+
+            </label>
+
+
+            <label class="radio-card">
+
+                <input
+                    type="radio"
+                    name="pickup"
+                    value="Student Center"
+                >
+
+                <div>
+
+                    <strong>
+                        📍 Student Center
+                    </strong>
+
+                    <span>
+                        Ground Floor • Near Gym
+                    </span>
+
+                </div>
+
+            </label>
+
+            <label class="radio-card">
+
+                <input
+                    type="radio"
+                    name="pickup"
+                    value="Library Café"
+                >
+
+                <div>
+
+                    <strong>
+                        📚 Library Café
+                    </strong>
+
+                    <span>
+                        Library Building • 1st Floor
+                    </span>
+
+                </div>
+
+            </label>
+
+            <p id="pickup-error" class="error-message hidden">
+                Please select a pickup location
+            </p>
+
+
+            <h2 class="form-heading">
+                Pickup Details
+            </h2>
+
+            <div class="form-group">
+                <label for="pickup-name">
+                    Pickup Name
+                </label>
+                <input
+                    type="text"
+                    id="pickup-name"
+                    class="form-control"
+                    placeholder="Name called out at the counter"
+                    maxlength="50"
+                >
+                <p id="name-error" class="error-message hidden">
+                    Please enter a pickup name
+                </p>
+            </div>
+
+            <div class="form-group">
+                <label for="pickup-time">
+                    Pickup Time
+                </label>
+                <select id="pickup-time" class="form-control">
+                </select>
+            </div>
+
+
+            <h2 class="form-heading">
+                Payment Method
+            </h2>
+
+
+            <div class="payment-options">
+
+                <label class="payment-card">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="Cash"
+                        checked
+                    >
+
+                    <span>💵</span>
+
+                    <strong>Cash</strong>
+
+                    <small>Pay at pickup</small>
+
+                </label>
+
+
+                <label class="payment-card">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="GCash"
+                    >
+
+                    <span>📱</span>
+
+                    <strong>GCash</strong>
+
+                    <small>Scan QR at counter</small>
+
+                </label>
+
+            </div>
+
+            <p id="payment-error" class="error-message hidden">
+                Please select a payment method
+            </p>
+
+            <div id="cash-amount-row" class="cash-amount-row">
+                <label for="cash-amount">
+                    Amount Tendered (₱)
+                </label>
+                <input
+                    type="number"
+                    id="cash-amount"
+                    class="form-control"
+                    min="0"
+                    step="1"
+                    placeholder="0"
+                >
+                <div id="change-row" class="change-row hidden">
+                    <span>Change</span>
+                    <strong id="change-due">₱0</strong>
+                </div>
+                <p id="cash-error" class="error-message hidden">
+                    Amount tendered must be at least the order total
+                </p>
+            </div>
+
+            <div class="form-heading">
+                <h2>Order Notes <small>(optional)</small></h2>
+            </div>
+
+            <textarea
+                id="order-notes"
+                class="order-notes"
+                placeholder="Add notes for the kitchen (e.g., no onions, extra sauce...)"
+                rows="3"
+            ></textarea>
+
+        </section>
+
+
+        <aside class="summary-card">
+
+            <h2>Your Order</h2>
+
+            <div id="checkout-items"></div>
+
+            <hr>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <strong id="checkout-subtotal">₱0</strong>
+            </div>
+
+            <div class="summary-row">
+                <span>Service Fee</span>
+                <strong id="checkout-fee">₱10</strong>
+            </div>
+
+            <hr>
+
+            <div class="summary-row total-row">
+
+                <span>Total</span>
+
+                <strong id="checkout-total">
+                    ₱0
+                </strong>
+
+            </div>
+
+            <div class="estimated-time">
+                <span>⏱️ Estimated Pickup:</span>
+                <strong id="estimated-time-value">15–20 mins</strong>
+            </div>
+
+            <button
+                id="place-order"
+                class="btn btn-primary full-button"
+            >
+                Place Order
+            </button>
+
+            <p class="secure-note">
+                🔒 Your order is secure
+            </p>
+
+        </aside>
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+
+    <div>
+        <a href="index.html" class="logo">
+            🍴 Campus<span>Bites</span>
+        </a>
+
+        <p>
+            Campus food ordering made simple.
+        </p>
+    </div>
+
+    <p class="copyright">
+        © 2026 CampusBites
+    </p>
+
+</footer>
+
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/checkout.js"></script>
+
+</body>
+</html>
