@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusBites | Menu</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        🍴 Campus<span>Bites</span>
+    </a>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="orders.html">Orders</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="profile.html">Profile</a>
+
+    </nav>
+
+    <a href="cart.html" class="cart-button">
+        🛒 Cart
+        <span id="cart-count">0</span>
+    </a>
+
+    <div class="auth-menu"></div>
+
+</header>
+
+
+<main class="page">
+
+    <section class="page-header">
+
+        <p class="eyebrow">CAMPUS CAFETERIA</p>
+
+        <h1>Our Menu 🍴</h1>
+
+        <p>
+            Find something delicious for your next class break.
+        </p>
+
+    </section>
+
+
+    <!-- SEARCH -->
+
+    <div class="menu-controls">
+
+        <div class="search-box">
+
+            <span>🔎</span>
+
+            <input
+                type="text"
+                id="menu-search"
+                placeholder="Search food..."
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- CATEGORIES -->
+
+    <div id="categories" class="category-filter">
+
+        <button
+            class="filter-button active"
+            data-category="All"
+        >
+            All
+        </button>
+
+        <button
+            class="filter-button"
+            data-category="Burgers"
+        >
+            🍔 Burgers
+        </button>
+
+        <button
+            class="filter-button"
+            data-category="Rice Meals"
+        >
+            🍱 Rice Meals
+        </button>
+
+        <button
+            class="filter-button"
+            data-category="Pasta"
+        >
+            🍝 Pasta
+        </button>
+
+        <button
+            class="filter-button"
+            data-category="Sandwiches"
+        >
+            🥪 Sandwiches
+        </button>
+
+        <button
+            class="filter-button"
+            data-category="Sides"
+        >
+            🍟 Sides
+        </button>
+
+        <button
+            class="filter-button"
+            data-category="Drinks"
+        >
+            🥤 Drinks
+        </button>
+
+        <button
+            class="filter-button"
+            data-category="Desserts"
+        >
+            🍰 Desserts
+        </button>
+
+    </div>
+
+
+    <div class="results-info">
+
+        <span id="food-count">
+            0 food items
+        </span>
+
+    </div>
+
+
+    <div id="menu-foods" class="food-grid"></div>
+
+
+    <div id="no-results" class="empty-state hidden">
+
+        <div class="empty-icon">🔎</div>
+
+        <h2>No food found</h2>
+
+        <p>
+            Try searching for something else.
+        </p>
+
+    </div>
+
+</main>
+
+
+<footer class="footer">
+
+    <div>
+        <a href="index.html" class="logo">
+            🍴 Campus<span>Bites</span>
+        </a>
+
+        <p>
+            Campus food ordering made simple.
+        </p>
+    </div>
+
+    <p class="copyright">
+        © 2026 CampusBites
+    </p>
+
+</footer>
+
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>
